@@ -16,7 +16,7 @@ useEffect(() => {
     if (userToken) {
         setToken(true);
     }
-}, []);
+}, [token]);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -27,10 +27,11 @@ useEffect(() => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-        const response = await axios.post('http://localhost:5001/login', formData);
+        const response = await axios.post('https://backend-api-lilac.vercel.app/login', formData);
 
         const token  = response.data.token;
         sessionStorage.setItem('token', token);
+        setToken(true)
         console.log(response.data);
     } catch (error) {
         console.error('Error Login user:', error.response.data.error);
