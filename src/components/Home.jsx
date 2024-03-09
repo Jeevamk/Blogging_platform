@@ -65,8 +65,8 @@ const Home = () => {
           <input
             type="text"
             placeholder="Description"
-            name="description"
-            value={formData.description}
+            name="discription"
+            value={formData.discription}
             onChange={handleChange}
             className="block w-full px-4 py-2 mb-4 border border-gray-300 rounded-md focus:outline-none focus:border-blue-500"
           />
@@ -93,7 +93,7 @@ const Home = () => {
         {blogs && blogs.map(blog => (
   <li key={blog._id}>
     <h3>{blog.title}</h3>
-    <p>{blog.description}</p>
+    <p>{blog.discription}</p>
     <p>Created Date: {blog.createdDate}</p>
   </li>
 
