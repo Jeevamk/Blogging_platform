@@ -100,7 +100,7 @@ const RegistrationForm = () => {
           Register
         </button>
         <p className="text-sm font-light text-gray-500 dark:text-gray-400 p-3">
-                      Do you have an account? <a href="#" className="font-medium text-primary-600 hover:underline dark:text-primary-500">Sign In</a>
+                      Do you have an account? <a onClick={()=>setIsSubmitted(true)} className="font-medium text-primary-600 hover:underline dark:text-primary-500">Sign In</a>
                   </p>
       </form>
       </div>
