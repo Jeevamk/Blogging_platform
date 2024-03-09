@@ -92,8 +92,8 @@ const Home = () => {
         <ul>
         {blogs && blogs.map(blog => (
   <li key={blog._id}>
-    <h3>{blog.title}</h3>
-    <p>{blog.discription}</p>
+    <h3>Title : {blog.title}</h3>
+    <p>Description : {blog.discription}</p>
     <p>Created Date: {blog.createdDate}</p>
   </li>
 
