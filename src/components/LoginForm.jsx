@@ -40,41 +40,7 @@ useEffect(() => {
   };
 
   return (
-    // <>
-    // <div className="max-w-sm mx-auto mt-8 border border-gray-300 rounded-md p-4">
-    // <h1 className="text-3xl font-bold underline p-4">
-    //   Login Form
-    // </h1>
-    //   <form onSubmit={handleSubmit} action='post'>
-    //     <input
-    //       type="email"
-    //       placeholder="Email"
-    //       name="email"
-    //       value={formData.email}
-    //       onChange={handleChange}
-    //       className="block w-full px-4 py-2 mb-4 border border-gray-300 rounded-md focus:outline-none focus:border-blue-500"
-    //     />
-    //     <input
-    //       type="password"
-    //       placeholder="Password"
-    //       name="password"
-    //       value={formData.password}
-    //       onChange={handleChange}
-    //       className="block w-full px-4 py-2 mb-4 border border-gray-300 rounded-md focus:outline-none focus:border-blue-500"
-    //     />
-    //     <button
-    //       type="submit"
-    //       className="w-full px-4 py-2 text-white bg-blue-500 rounded-md hover:bg-blue-600 focus:outline-none focus:bg-blue-600"
-    //     >
-    //       Sign In
-    //     </button>
-    //     <p className="text-sm font-light text-gray-500 dark:text-gray-400 p-3">
-    //         Don’t you have an account? <a  className="font-medium text-primary-600 hover:underline dark:text-primary-500">Sign Up</a>
-    //               </p>
-    //   </form>
-    //   </div>
     
-    // </>
     <>
             {token ? (
                 <Home />

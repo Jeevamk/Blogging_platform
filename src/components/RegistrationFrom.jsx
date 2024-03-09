@@ -27,7 +27,7 @@ const RegistrationForm = () => {
     e.preventDefault();
     try {
         const response = await axios.post('https://backend-api-lilac.vercel.app/', formData);
-        console.log(response.data.message);
+        console.log(response.data.message)
         setIsSubmitted(true)
 
     } catch (error) {
@@ -45,7 +45,7 @@ const RegistrationForm = () => {
     <>
     {isSubmitted ? (
         <LoginForm />
-      ) :(
+      ) : (
     <div className="max-w-sm mx-auto mt-8 border border-gray-300 rounded-md p-4">
     <h1 className="text-3xl font-bold underline p-4">
       Registration Form
