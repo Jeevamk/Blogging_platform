@@ -17,18 +17,21 @@ const Home = () => {
     setFormData({ ...formData, [name]: value });
   };
 
-  const handleSubmit =async (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     try {
         const userToken = sessionStorage.getItem('token');
-        const response = await axios.post('https://backend-api-lilac.vercel.app/blog/add_blog', {headers: { Auth: userToken} });
+        console.log('userToken',userToken);
+        const response = await axios.post('https://backend-api-lilac.vercel.app/blog/add_blog', formData, { headers: { Auth : userToken } });
         console.log(response.data.message)
+        console.log("Added...");
 
+        
     } catch (error) {
         console.error('Error registering user:', error.response.data.error);
     }
     console.log(formData);
-  };
+  }
 
 
   return (
